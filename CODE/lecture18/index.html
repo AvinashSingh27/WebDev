@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .box{
+            border: 1px solid red;
+            /* 12% of what its immediate parents that is body*/
+            width: 12%;
+        }
+        .parent{
+            border:1px solid gray;
+            background-color: azure;
+        }
+        .child{
+            border: 1px solid red;
+            background-color: yellow;
+            /* 50% of parent width */
+            width: 50%;
+        }
+        .container{
+            border: 3px solid green;
+            background: yellow;
+            /* we can set 1 to 100 view height and view width */
+            height: 100vh;
+            width: 50vw;
+        }
+        /* em is a relative unit which is dependent on a parent class */
+        .container1{
+            font-size: 10px;
+        }
+        .box1{
+            font-size: 10em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        Welcome to code help
+    </div> -->
+
+    <!-- <div class="parent">
+        <div class="child">
+            Hello!
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        hey its me Avinash
+    </div> -->
+    <p>
+        Hello Avinash
+    </p>
+    <div class="container1">
+        <div class="box1">
+            hello ji
+        </div>
+    </div>
+</body>
+</html>

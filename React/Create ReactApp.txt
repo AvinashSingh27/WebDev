@@ -1,0 +1,7 @@
+Step 1: Install node.js
+Step 2: Vs code
+Step 3: Create a new folder -> ReactFolio
+Step 4: Change directory to ReactFolio
+Step 5: npx create-react-app myApp
+Step 6: change directory to myApp
+Step 7: npm start

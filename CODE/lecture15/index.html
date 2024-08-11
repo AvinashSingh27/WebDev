@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        /* universal selector */
+        *{
+            text-align: center;
+        }
+        h1{
+            background-color: aquamarine;
+            /* border-style: solid;
+            border-color: rgb(140, 92, 19);
+            border-width: 2px; */
+
+            /* short hand notation */
+            border:solid brown 2px;
+            /* it is used to round corner */
+            /* border-radius: 30px;   */
+            /* border-top-left-radius: 5px; */
+
+            /* border-left: solid black 5px; */
+
+            border: solid green 5px;
+            border-radius: 5px;
+            width: 300px;
+            height: 200px;
+
+        }
+        .firstclass{
+            background-color: rgb(240, 240, 255);
+            border: solid green 5px;
+            border-radius: 5px;
+            padding: 50px;
+            margin: 90px;
+
+
+        }
+        .secondclass{
+            background-color: rgb(155, 100, 100);
+            border: solid green 5px;
+            border-radius: 5px;
+            
+            /* padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px; */
+
+            /* short hand notation */
+            /* top right buttom left */
+            /* padding: 20px 10px 20px 10px; */
+            /* first value top and buttom and second value right and left */
+            padding: 20px 40px;
+        }
+        .thirdclass{
+            background-color: rgb(112, 112, 169);
+            border: solid green 5px;
+            border-radius: 5px;
+
+            /* margin:20px;*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            /* Yes, we can add in short-hand style just like padding. */
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to code help</h1>
+    <p class="firstclass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, amet.</p>
+
+    <p class="secondclass">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Id voluptas pariatur aperiam perferendis ut aliquid!</p>
+
+    <p class="thirdclass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Doloremque laudantium exercitationem soluta. Nemo, sed ipsam?
+    </p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black ;
+    background-color: aqua;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(134, 134, 158);
+    border: 1px solid rebeccapurple;
+    padding: 20px;
+    margin: 20px;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: avi 5s ease 1s 3;
+
+    /* animation-name: avi;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-delay: 2s; */
+
+
+}
+/* keyframe are those points who specifies the direction or instance of animation */
+
+@keyframes avi {
+    /* you can also set the instance of animation */
+    0%{
+        width: 200px;
+        background-color: rgb(134, 134, 158);
+    }
+    50%{
+        width: 300px;
+        background-color: brown;
+    }
+    100%{
+        width: 400px;
+        background-color: blueviolet;
+    }
+    
+}
+
+/* @keyframes avi {
+    from{
+        width: 200px;
+    }
+    to{
+        width: 800px;
+    }
+} */

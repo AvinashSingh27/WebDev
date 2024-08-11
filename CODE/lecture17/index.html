@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        border: 1px solid red;
+    }
+    img{
+        margin:10px;
+    }
+    .image2{
+    /* position:relative;
+    top: 100px;
+    left:200px; */
+    position: absolute;
+    top: 100px;
+    }
+    .container{
+        position: relative;
+        height: 8000px;
+    }
+    .image4{
+        /* it will fixed in entire webpage */
+        position: fixed;
+
+    }
+    .image3{
+        /* it will show sticky behavior in parent contianer and relative to parent container*/
+        position: sticky;
+        top:100px;
+    }
+    .box{
+        height: 3000px;
+        background-color: antiquewhite;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <img src="1.jpg" alt="image1" width="200px"
+        height="200px" class="image1">
+
+        <img src="2.jpg" alt="image2" width="200px"
+        height="200px" class="image2">
+
+        <img src="3.jpg" alt="image3" width="200px"
+        height="200px" class="image3">
+
+        <img src="4.jpg" alt="image4" width="200px"
+        height="200px" class="image4">
+        
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

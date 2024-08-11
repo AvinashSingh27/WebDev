@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS shadow</title>
+    <style>
+        /* if we can define custome variable inside a root we can use it anywhere */
+        /* :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        } */
+        .container{
+            background-color: aliceblue;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* here we are creating custome variable */
+            --primary-color:brown;
+            --custom-width:330px;
+            background-color: bisque;
+            width: var(--custom-width);
+            height: 400px;
+            border: 2px solid var(--primary-color);
+            margin: 4px;
+            padding: 4px;
+            /* box-shadow: 20px 10px brown; */
+            /* by using negative value we can chnage direction  */
+            /* box-shadow: 20px -10px brown; */
+            
+            /* box shadow using blur radius, in which we can add blur effect in colour */
+            /* box-shadow: 10px 10px 50px red; */
+            
+            /* box shadow with spread radius, the value which tell how much your shadow will spread */
+            /* box-shadow: 10px 10px 30px 20px black; */
+
+            /* we want shadow inside a box,we can use inset */
+            /* box-shadow: inset 10px 15px brown; */
+
+            /* if we want to add multiple shadow */
+            box-shadow: 10px 10px red, 20px 20px rgb(85, 24, 208);
+
+            
+            /* by default shodow color is black or color of text */
+
+        }
+        h1{
+                text-shadow: 2px 2px 1px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="image.png">
+
+        <h1>Welcome to Code help</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laborum assumenda numquam ullam aliquam pariatur 
+            veniam perferendis iure eius! Optio ab illum reiciendis laborum molestiae aut natus sit harum!</p>
+    </div>
+</div>
+</body>
+</html>

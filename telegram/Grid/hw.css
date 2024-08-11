@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: brown;
+    border: 2px solid black;
+    height: 100vh;
+    display: grid;
+
+    /* here we decides row and column in grid */
+    /* it means first row is 20px, 2nd row is 1fr, and third row is 20px */
+    grid-template-rows: 20px 1fr 20px;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    /* overflow-y: hidden; */
+}
+.box{
+    background-color: rgb(128, 100, 100);
+    border: 2px solid black;
+    /* height: 80px;  */
+    /* width: 80px; */
+    
+    
+}
+
+#box1{
+    /* consider line number, if we want to span it */
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#box4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}   
+#box3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+

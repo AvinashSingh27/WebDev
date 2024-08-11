@@ -1,0 +1,14 @@
+1- npm install -D tailwindcss postcss autoprefixer vite   -(in terminal)
+2- npx tailwindcss init -p      -(in terminal)
+3- In tailwind.config.js -> content:["*"],    ->means processed all the tailwind code written in html file
+4- Add scripts in package.json -> 
+ "scripts": {
+    "start": "vite"
+  },
+5- Create main.css and paste these three line ->
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+And link to the html file.
+
+npm run start ->  to run on a local host (live-server)
